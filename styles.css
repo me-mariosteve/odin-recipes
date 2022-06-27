@@ -1,6 +1,6 @@
 * {
-	background-color: #606060;
-	color: #E0E0E0;
+	background-color: #404040;
+	color: #C0C0C0;
 	font-family: "Verdana", "Helvetica", "Tahoma", "Times New Roman", sans-serif;
 	font-weight: 600;
 }
@@ -10,4 +10,21 @@ h1 {
 img {
 	width: 720px;
 	height: 480px;
+}
+span.menu {
+	display: flex;
+}
+span.menu > a {
+	flex: 1 1 auto;
+	display: inline;
+	font-size: 1.2em;
+	background-color: #303030;
+	border: 6px solid black;
+	padding-top: 0.25em;
+	padding-left: 0.5em;
+	height: 1.5em;
+	width: 100%;
+}
+span.menu > a:hover {
+	background-color: #202020;
 }
