@@ -1,0 +1,13 @@
+* {
+	background-color: #606060;
+	color: #E0E0E0;
+	font-family: "Verdana", "Helvetica", "Tahoma", "Times New Roman", sans-serif;
+	font-weight: 600;
+}
+h1 {
+	text-decoration: underline 5px black;
+}
+img {
+	width: 720px;
+	height: 480px;
+}
