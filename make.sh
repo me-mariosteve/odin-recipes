@@ -22,7 +22,7 @@ function sidebar-recipes-list () {
 	echo '		<ul class="recipes-list">'
 	for recipe in recipes/[a-z]*.html; do
 		recipe_name="$(sed -E 's/^recipes\/(.*?)\.html$/\u\1/;'<<<"$recipe")"
-		echo "			<li><a href='$recipe' target='_top'>$recipe_name</a></li>"
+		echo "			<li><a href='$recipe'>$recipe_name</a></li>"
 	done
 	cat <<EOF
 		</ul>
