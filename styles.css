@@ -20,6 +20,10 @@ img.recipe-portrait {
 	border-radius: 2%;
 }
 
+iframe {
+	border: none;
+}
+
 div.page {
 	display: flex;
 	height: 100vh;
@@ -32,17 +36,15 @@ div.document {
 	flex-shrink: 1;
 }
 
-div.sidebar {
+iframe.sidebar {
 	flex-shrink: 0;
-	width: auto;
-	height: auto;
 	overflow: auto;
-	border-right: 5px solid black;
 	padding: 0px;
+	border-right: 5px solid black;
 	border-bottom: 5px solid black;
 	border-radius: 0 0 5vh;
 }
-div.sidebar, div.sidebar * {
+iframe.sidebar, iframe.sidebar * {
 	background-color: #303030;
 }
 
