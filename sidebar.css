@@ -1,0 +1,46 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+* {
+	color: #CCC;
+	background-color: #223;
+	font-family: "Verdana", "Helvetica", "Tahoma", "Times New Roman", sans-serif;
+	font-weight: 600;
+}
+
+ul.recipes-list {
+	list-style-type: none;
+	padding: 0px 10px;
+}
+
+a.link-box {
+	text-decoration: none;
+}
+a.link-box * {
+	color: #DDD;
+	background-color: #556;
+}
+a.link-box > div > img {
+	/* https://stackoverflow.com/a/34297963/18598705 */
+	/* https://developer.mozilla.org/en-US/docs/Web/CSS/mix-blend-mode */
+	/* only firefox, chrome and safari */
+	mix-blend-mode: luminosity;
+}
+a.link-box > div {
+	border: 2px solid #A0A0A0;
+	/* normal padding + border size for a:hover */
+	padding: 3px 8px;
+}
+a.link-box:hover {
+	text-decoration: 2px underline black;
+}
+a.link-box:hover * {
+	background-color: #AAC;
+}
+a.link-box:hover > div {
+	border-right: 5px solid Black;
+	border-left: 5px solid black;
+	color: black;
+	padding: 3px 5px;
+}

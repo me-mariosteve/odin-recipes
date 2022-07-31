@@ -9,12 +9,16 @@ function die () {
 
 dest="${dest:-/srv/http}"
 declare -a tocopy=(
-	index.html styles.css
-	sidebar.html
-	home-16x16.png github-16x16.png top-16x16.png
+	$(find . -maxdepth 1 -type f \
+		-a -iname '*.html' -o -iname '*.css'\
+		-o -iname '*.png' -o -iname '*.ico' \
+	)
 	recipes
 )
 tocopy_str="${tocopy[*]}"
+
+echo "dest='$dest'"
+echo "tocopy=($tocopy_str)"
 
 
 function sidebar-recipes-list () {
@@ -22,7 +26,7 @@ function sidebar-recipes-list () {
 	echo '		<ul class="recipes-list">'
 	for recipe in recipes/[a-z]*.html; do
 		recipe_name="$(sed -E 's/^recipes\/(.*?)\.html$/\u\1/;'<<<"$recipe")"
-		echo "			<li><a href='$recipe'>$recipe_name</a></li>"
+		echo "			<li><a href=\"$recipe\" alt=\"Recipe for '$recipe_name'\">$recipe_name</a></li>"
 	done
 	cat <<EOF
 		</ul>

@@ -44,38 +44,3 @@ iframe.sidebar {
 	border-bottom: 5px solid black;
 	border-radius: 0 0 5vh;
 }
-iframe.sidebar, iframe.sidebar * {
-	background-color: #303030;
-}
-
-ul.recipes-list {
-	list-style-type: none;
-	padding: 0px 10px;
-}
-
-a.link-box {
-	text-decoration: none;
-}
-a.link-box * {
-	background-color: #666;
-}
-a.link-box > div > img {
-	/* https://stackoverflow.com/a/34297963/18598705 */
-	/* https://developer.mozilla.org/en-US/docs/Web/CSS/mix-blend-mode */
-	/* only firefox, chrome and safari */
-	mix-blend-mode: luminosity;
-}
-a.link-box > div {
-	border: 2px solid #A0A0A0;
-	padding: 3px 5px;
-}
-a.link-box:hover {
-	text-decoration: 2px underline black;
-}
-a.link-box:hover * {
-	background-color: white;
-}
-a.link-box:hover > div {
-	border: 2px solid Black;
-	color: black;
-}
